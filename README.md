@@ -10,7 +10,7 @@
 |이름|사진|이름|사진|이름|사진|
 |:---|---|:---|---|:---|---|
 |[김태완](https://github.com/Kicangel)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%EB%A1%B1%EC%8A%A4%ED%86%A42.jpg" width="150" height="400"/>|[이재은](https://github.com/JAEEUN0129)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%EC%83%A4%EB%AF%B8%EB%A5%B4.jpg" width="150" height="400"/>|[임산별](https://github.com/ImMountainStar)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%8C%8C%EC%B9%98%EB%A6%AC%EC%8A%A4.jpg" width="150" height="400"/>|
-|[양송이](https://github.com/songeeeey)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%91%B8%ED%81%AC%EB%A6%B0.jpg" width="150" height="400"/>|[전상아](https://github.com/sang-a-le)|<img src="https://github.심
+|[양송이](https://github.com/songeeeey)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%91%B8%ED%81%AC%EB%A6%B0.jpg" width="150" height="400"/>|[전상아](https://github.com/sang-a-le)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%8E%AD%ED%83%9C%EC%9E%90.jpg" width="150" height="400"/>|
 
 -----
 # 2. 프로젝트 개요
