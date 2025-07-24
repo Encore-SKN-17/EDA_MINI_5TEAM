@@ -165,29 +165,35 @@ print("p-value:", p_value)
 # 점계열 상관계수: 0.030062190986452946
 # p-value: 0.0037672753981291885
 ```
+<img width="1233" height="610" alt="image" src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_data/%EC%9E%AC%EC%A7%81%EA%B8%B0%EA%B0%84.png" />
+
+
 <br>
 
 ### ② 청년취업지원정책 참여 여부와 고용형태의 관계
 ```python
-correlation, p_value = pointbiserialr(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['고용형태'])
-
-print("점계열 상관계수:", correlation)
-print("p-value:", p_value)
-
-# 점계열 상관계수: 0.014975400915141962
-# p-value: 0.14904952744420535
+#Chi2 Statistic: 10.671443172566471
+#P-value: 0.004816433385777259
+#Degrees of Freedom: 2
+#Expected Frequencies:
+#[[ 997.64351104  218.58481422   84.77167474]
+# [6122.35648896 1341.41518578  520.22832526]]
 ```
+<img width="1233" height="610" alt="image" src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_data/%EA%B3%A0%EC%9A%A9%ED%98%95%ED%83%9C.png" />
+
+
  <br>
  
 ### ③ 청년취업지원정책 참여 여부와 사업체규모의 관계
 ```python
-correlation, p_value = pointbiserialr(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['사업체규모'])
-
-print("점계열 상관계수:", correlation)
-print("p-value:", p_value)
-
-# 점계열 상관계수: -0.03902614357919664
-# p-value: 0.00016894118371017016
+#Chi2 Statistic: 39.072714182773936
+#P-value: 4.765020926308139e-06
+#Degrees of Freedom: 8
+#Expected Frequencies:
+#[[  14.01184707  206.67474421  232.87689822  300.55411955  235.25891222
+#   138.01669359   49.88217555   40.77447496   82.95013463]
+# [  85.98815293 1268.32525579 1429.12310178 1844.44588045 1443.74108778
+#   846.98330641  306.11782445  250.22552504  509.04986537]]
 ```
 <br>
 
