@@ -165,12 +165,13 @@ pearsonr(youth_df['취업 준비 도움 정도 - 공공 기관'], youth_df['취�
 
 ### 🔹가설 검정
 ```python
- #Chi2 Statistic: 0.016429246086206405
- #P-value: 0.8980092014416176
- #Degrees of Freedom: 1
- #Expected Frequencies:
- #[[1261.76682822   39.23317178]
- #[7743.23317178  240.76682822]]
+correlation, p_value = pointbiserialr(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['취업자여부'])
+
+print("점계열 상관계수:", correlation)
+print("p-value:", p_value)
+
+# 점계열 상관계수: 0.00223735912730884
+# p-value: 0.8293305261237868
  ```
 → p값이 0.05보다 크고, 통계량이 작아 두 변수 간의 귀무가설이 기각되지 않는다. 즉, 취업지원제도 참여와 취업 여부 간엔 유의미한 상관관계가 없다. 
 
@@ -188,13 +189,11 @@ pearsonr(youth_df['취업 준비 도움 정도 - 공공 기관'], youth_df['취�
 
 ### ① 청년취업지원정책 참여 여부와 고용기간의 관계
 ```python
-correlation, p_value = pointbiserialr(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['고용기간'])
+contingency_table = pd.crosstab(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['고용기간'])
 
-print("점계열 상관계수:", correlation)
-print("p-value:", p_value)
-
-# 점계열 상관계수: 0.030062190986452946
-# p-value: 0.0037672753981291885
+# Chi2 Statistic: 8.189700050509838
+# P-value: 0.0042128888535302375
+# Degrees of Freedom: 1
 ```
 <img width="900" height="450" alt="image" src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_data/%EC%9E%AC%EC%A7%81%EA%B8%B0%EA%B0%84.png" />
 
@@ -204,9 +203,6 @@ print("p-value:", p_value)
 ### ② 청년취업지원정책 참여 여부와 고용형태의 관계
 ```python
 contingency_table = pd.crosstab(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['고용형태'])
-
-#카이제곱 독립성 검정: 취업지원제도 참여 여부와 고용형태
-chi2, p, dof, expected = chi2_contingency(contingency_table)
 
 #Chi2 Statistic: 10.671443172566471
 #P-value: 0.004816433385777259
@@ -220,9 +216,6 @@ chi2, p, dof, expected = chi2_contingency(contingency_table)
 ### ③ 청년취업지원정책 참여 여부와 사업체규모의 관계
 ```python
 contingency_table = pd.crosstab(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['사업체규모'])
-
-# 카이제곱 독립성 검정: 취업지원제도 참여 여부와 사업체 규모
-chi2, p, dof, expected = chi2_contingency(contingency_table)
 
 #Chi2 Statistic: 39.072714182773936
 #P-value: 4.765020926308139e-06
@@ -238,9 +231,9 @@ chi2, p, dof, expected = chi2_contingency(contingency_table)
 ---
 
 ## 인사이트 
-: - 취업 여부가 학력, 지역, 성별 등 외부요인에 많은 영향을 받는 것으로 생각하여 해당 프로젝트를 시작했지만, 취업 여부에 통계적으로 유의미한 요인은 없다는 결과를 도출하였다. 
-  - 취업지원제도 참여 여부에 따라 근로 기간, 고용 형태에 따른 분석의 경우, 귀무가설을 기각할 수 있으며 두 변수에 대한 상관관계가 있음을 알 수 있다.
-  - 
+ - 취업 여부가 학력, 지역, 성별 등 외부요인에 많은 영향을 받는 것으로 생각하여 해당 프로젝트를 시작했지만, 취업 여부에 통계적으로 유의미한 요인은 없다는 결과를 도출하였다. 
+ - 취업지원제도 참여 여부에 따라 근로 기간, 고용 형태에 따른 분석의 경우, 귀무가설을 기각할 수 있으며 두 변수에 대한 연관성이 있음을 알 수 있다.
+ - 하지만, 응답자 중 청년지원정책 참여자 수가 너무 작아 상관관계를 파악하지 못하여 추가적인 분석이 필요해보인다. 
 
 
 
