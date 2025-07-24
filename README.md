@@ -10,46 +10,7 @@
 |이름|사진|이름|사진|이름|사진|
 |:---|---|:---|---|:---|---|
 |[김태완](https://github.com/Kicangel)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%EB%A1%B1%EC%8A%A4%ED%86%A42.jpg" width="150" height="400"/>|[이재은](https://github.com/JAEEUN0129)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%EC%83%A4%EB%AF%B8%EB%A5%B4.jpg" width="150" height="400"/>|[임산별](https://github.com/ImMountainStar)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%8C%8C%EC%B9%98%EB%A6%AC%EC%8A%A4.jpg" width="150" height="400"/>|
-|[양송이](https://github.com/songeeeey)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%91%B8%ED%81%AC%EB%A6%B0.jpg" width="150" height="400"/>|[전상아](https://github.com/sang-a-le)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%8E%AD%ED%83%9C%EC%9E%90.jpg" width="150" height="400"/>|
-<br>
-<br>
-
------
-# 2. 프로젝트 개요
-
-## 👉 프로젝트 명 
-### 프로젝트 명
-한국 취업 시장 근황 및 청년 일자리 지원 정책의 실효성 평가
-<br>
-
-## 👉 프로젝트 소개 
-### 청년지원정책과 취업률 상관관계 분석과 청년지원정책을 통한 구직의 유효성 확인
-<br>
-
-## 👉 프로젝트 필요성 및 목적
-### 프로젝트 필요성
-- 청년층 : 19세 이상 34세 이하인 사람
-
-- 통계청에 따르면 우리나라 청년 실업률은 2000년대 8% 부터 시작해 2020년까지 9%를 유지했으며, 2020년 이후 2024년 5.9%까지 감소했다
-
-- 2025년 1월 청년층 고용률도 44.8%를 기록하며, 청년 고용률 지표도 어둡다
-
-> 고용률 : 취업자 / 총 인구
-
-<img width="1233" height="610" alt="image" src="https://github.com/user-attachments/assets/181d696a-089c-4bf0-985e-f4343df59e05" />
-
-- 15 ~ 29살 청년층의 체감실업률은 16.4%로, 실제 청년 실업률과 간극이 심하다
-
-> 체감 실업률 : 통계청이 집계하는 공식 실업률이 포착하지 못하는 '잠재 실업자'를 포괄하는 지표. 아르바이트를 하며, 다른 직장을 찾는 '알바생'이나 공무원 시험 등을 준비하는 '공시생'등 노동 시장 안팎에서 더 나은 일자리를 얻으려는 사람들을 의미
-
->>아르바이트 & 인턴 등으로 기본적인 생계를 해결하면서 정규직 등 좋은 일자리에 계속 도전하는 청년들이 많아지면서 체감 실업률이 상승
-
-### 청년지원정책에 대한 기사 워드클라우드
-<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image.png" width="450" height="1600"/>
-
-[워드클라우드]
-- 최근 각종 매체에 “한국 청년 취업 시장이 갈수록 어려워지고 있다”는 언급 증가 및 이에 따른 공감 여론이 형성되고 있다.
-- 하지만 다양한 변수로 인해 취업률에 영향을 주는 요인들 파악이 어렵다는 문제가 있다.
+|[양송이](https://github.com/songeeeey)|<img src="https://github.com/Encore-SKN-17/EDA_MINI_5TEAM/blob/main/image_1/%ED%91%B8%ED%81%AC%EB%A6%B0.jpg" width="150" height="400"/>|[전상아](https://github.com/sang-a-le)|<img src="https://github.심
 
 - 거시적으로는 전반적 고용 문제를 해결하기 위한 경제정책을 활용하고 있고,
 미시적 노동정책의 일환으로 직업훈련 프로그램, 중소기업 취업 지원 등 다양한 차원에서 막대한 예산을 투입하여 여러 가지 청년 취업 정책을 시행
