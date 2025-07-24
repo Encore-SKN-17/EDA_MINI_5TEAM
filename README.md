@@ -101,6 +101,97 @@
 
 
 # 5. 수행결과
+## 가설 1) 
+$$H_{0}$$ : 청년취업지원정책 참여 여부와 취업 여부는 상관성이 없다. 
+
+$$H_{1}$$ : 청년취업지원정책 참여 여부와 취업 여부는 상관성이 있다. 
+  
+<br>
+
+### 🔹 상관분석 - 선형성 확인
+ - 피어슨
+```python
+pearsonr(youth_df['취업 준비 도움 정도 - 공공 기관'], youth_df['취업자여부'])
+
+# PearsonRResult(statistic=np.float64(-0.005712722930090452), pvalue=np.float64(0.5820443894818739))
+ ```
+
+
+ - 스피어만
+  ```python
+  spearmanr(youth_df['취업 준비 도움 정도 - 공공 기관'], youth_df['취업자여부'])
+
+  #SignificanceResult(statistic=np.float64(-0.0025423700042555906), pvalue=np.float64(0.8064975512088922))
+  ```
+  
+ - 켄달
+  ```python
+  kendalltau(youth_df['취업 준비 도움 정도 - 공공 기관'], youth_df['취업자여부'])
+
+  # SignificanceResult(statistic=np.float64(-0.0024918541500352606), pvalue=np.float64(0.8064825342420824))
+  ```
+
+  
+<br>
+
+### 🔹가설 검정
+```python
+ #Chi2 Statistic: 0.016429246086206405
+ #P-value: 0.8980092014416176
+ #Degrees of Freedom: 1
+ #Expected Frequencies:
+ #[[1261.76682822   39.23317178]
+ #[7743.23317178  240.76682822]]
+ ```
+→ p값이 0.05보다 작고, 통계량이 작아 두 변수 간의 귀무가설이 기각되지 않는다. 즉, 취업지원제도 참여와 취업 여부 간엔 유의미한 상관관계가 없다. 
+
+<br>
+<br>
+
+## 가설 2) 
+$$H_{0}$$ : 청년취업지원정책 참여 여부와 원하는 기업 취업은 상관성이 없다.
+
+$$H_{1}$$ : 청년취업지원정책 참여 여부와 원하는 기업 취업은 상관성이 있다. 
+  
+<br>
+
+### ① 청년취업지원정책 참여 여부와 고용기간의 관계
+```python
+correlation, p_value = pointbiserialr(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['고용기간'])
+
+print("점계열 상관계수:", correlation)
+print("p-value:", p_value)
+
+# 점계열 상관계수: 0.030062190986452946
+# p-value: 0.0037672753981291885
+```
+<br>
+
+### ② 청년취업지원정책 참여 여부와 고용형태의 관계
+```python
+correlation, p_value = pointbiserialr(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['고용형태'])
+
+print("점계열 상관계수:", correlation)
+print("p-value:", p_value)
+
+# 점계열 상관계수: 0.014975400915141962
+# p-value: 0.14904952744420535
+```
+ <br>
+ 
+### ③ 청년취업지원정책 참여 여부와 사업체규모의 관계
+```python
+correlation, p_value = pointbiserialr(youth_df['취업 준비 도움 주체 - 공공 기관'], youth_df['사업체규모'])
+
+print("점계열 상관계수:", correlation)
+print("p-value:", p_value)
+
+# 점계열 상관계수: -0.03902614357919664
+# p-value: 0.00016894118371017016
+```
+<br>
+
+
 
 <br>
 <br>
